@@ -16,8 +16,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        num1TextField.keyboardType = .decimalPad
-        num2TextField.keyboardType = .decimalPad
+        num1TextField.keyboardType = .numberPad
+        num2TextField.keyboardType = .numberPad
     }
 
     @IBAction private func calcButton(_ sender: Any) {
