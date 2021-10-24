@@ -16,43 +16,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rCt-Zc-ETO">
-                                <rect key="frame" x="124" y="79" width="166" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rCt-Zc-ETO">
+                                <rect key="frame" x="127.5" y="79" width="159" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="7uI-7b-czO"/>
+                                    <constraint firstAttribute="height" constant="34" id="qHP-V6-5xG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zyr-Ev-xZh">
-                                <rect key="frame" x="124" y="134" width="166" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zyr-Ev-xZh">
+                                <rect key="frame" x="127.5" y="134" width="159" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="1ef-fL-H6A"/>
+                                    <constraint firstAttribute="width" constant="159" id="jUp-Pc-FoP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MxL-iS-V8m">
-                                <rect key="frame" x="94" y="208" width="226" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MxL-iS-V8m">
+                                <rect key="frame" x="127" y="208" width="160" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="4wG-v6-t1A"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="dEe-WE-Tp5"/>
+                                </constraints>
                                 <segments>
                                     <segment title="+"/>
                                     <segment title="-"/>
                                     <segment title="×"/>
                                     <segment title="÷"/>
                                 </segments>
-                                <connections>
-                                    <action selector="calcMethod:" destination="BYZ-38-t0r" eventType="valueChanged" id="4Dg-8I-OIy"/>
-                                </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsu-7a-M16">
-                                <rect key="frame" x="174" y="271" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsu-7a-M16">
+                                <rect key="frame" x="127" y="271" width="160" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="OI4-eM-v3u"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="lZo-sG-hLk"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="calcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rfs-Tn-EAw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b86-Rg-98v">
-                                <rect key="frame" x="131" y="334" width="152" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b86-Rg-98v">
+                                <rect key="frame" x="127" y="334" width="160" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4YJ-eT-O7B"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="wMB-yD-B1X"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -60,6 +72,18 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MxL-iS-V8m" firstAttribute="top" secondItem="Zyr-Ev-xZh" secondAttribute="bottom" constant="40" id="3gN-qG-CQ6"/>
+                            <constraint firstItem="Bsu-7a-M16" firstAttribute="top" secondItem="MxL-iS-V8m" secondAttribute="bottom" constant="32" id="6Wh-JN-jdT"/>
+                            <constraint firstItem="Bsu-7a-M16" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GDg-c5-yxF"/>
+                            <constraint firstItem="b86-Rg-98v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ih3-JK-Juk"/>
+                            <constraint firstItem="MxL-iS-V8m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pmq-eU-EOb"/>
+                            <constraint firstItem="Zyr-Ev-xZh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bkI-M9-4fB"/>
+                            <constraint firstItem="Zyr-Ev-xZh" firstAttribute="top" secondItem="rCt-Zc-ETO" secondAttribute="bottom" constant="21" id="cD4-7d-0Qr"/>
+                            <constraint firstItem="rCt-Zc-ETO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cuy-B5-4BI"/>
+                            <constraint firstItem="rCt-Zc-ETO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="ngK-14-5fc"/>
+                            <constraint firstItem="b86-Rg-98v" firstAttribute="top" secondItem="Bsu-7a-M16" secondAttribute="bottom" constant="32" id="uFi-Af-ijq"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="num1TextField" destination="rCt-Zc-ETO" id="Dyd-hm-2mD"/>
