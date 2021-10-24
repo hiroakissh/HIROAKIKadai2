@@ -13,9 +13,11 @@
 		53A6C9FB272531E600E574C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A6C9F9272531E600E574C0 /* Main.storyboard */; };
 		53A6C9FD272531E800E574C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A6C9FC272531E800E574C0 /* Assets.xcassets */; };
 		53A6CA00272531E800E574C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A6C9FE272531E800E574C0 /* LaunchScreen.storyboard */; };
+		B379B0D40B4460E794060B21 /* Pods_HIROAKIKadai2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7EE87B6F94AB21A2573E89 /* Pods_HIROAKIKadai2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		096046B03FB224BA5AE219D2 /* Pods-HIROAKIKadai2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIROAKIKadai2.debug.xcconfig"; path = "Target Support Files/Pods-HIROAKIKadai2/Pods-HIROAKIKadai2.debug.xcconfig"; sourceTree = "<group>"; };
 		53A6C9F0272531E600E574C0 /* HIROAKIKadai2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIROAKIKadai2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A6C9F3272531E600E574C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53A6C9F5272531E600E574C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		53A6C9FC272531E800E574C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53A6C9FF272531E800E574C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53A6CA01272531E800E574C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D7EE87B6F94AB21A2573E89 /* Pods_HIROAKIKadai2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HIROAKIKadai2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB19AD9DFD73D68842E294F6 /* Pods-HIROAKIKadai2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIROAKIKadai2.release.xcconfig"; path = "Target Support Files/Pods-HIROAKIKadai2/Pods-HIROAKIKadai2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B379B0D40B4460E794060B21 /* Pods_HIROAKIKadai2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C4E9B309F98B2AF05573F79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D7EE87B6F94AB21A2573E89 /* Pods_HIROAKIKadai2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		53A6C9E7272531E600E574C0 = {
 			isa = PBXGroup;
 			children = (
 				53A6C9F2272531E600E574C0 /* HIROAKIKadai2 */,
 				53A6C9F1272531E600E574C0 /* Products */,
+				9F1D3B30822CF759013611A9 /* Pods */,
+				1C4E9B309F98B2AF05573F79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = HIROAKIKadai2;
 			sourceTree = "<group>";
 		};
+		9F1D3B30822CF759013611A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				096046B03FB224BA5AE219D2 /* Pods-HIROAKIKadai2.debug.xcconfig */,
+				DB19AD9DFD73D68842E294F6 /* Pods-HIROAKIKadai2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53A6CA04272531E800E574C0 /* Build configuration list for PBXNativeTarget "HIROAKIKadai2" */;
 			buildPhases = (
+				D036E7FFAEB8D6F619971802 /* [CP] Check Pods Manifest.lock */,
 				53A6C9EC272531E600E574C0 /* Sources */,
 				53A6C9ED272531E600E574C0 /* Frameworks */,
 				53A6C9EE272531E600E574C0 /* Resources */,
+				53A6CA07272533BA00E574C0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53A6CA07272533BA00E574C0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		D036E7FFAEB8D6F619971802 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HIROAKIKadai2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		53A6C9EC272531E600E574C0 /* Sources */ = {
@@ -284,6 +352,7 @@
 		};
 		53A6CA05272531E800E574C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 096046B03FB224BA5AE219D2 /* Pods-HIROAKIKadai2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +381,7 @@
 		};
 		53A6CA06272531E800E574C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB19AD9DFD73D68842E294F6 /* Pods-HIROAKIKadai2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
