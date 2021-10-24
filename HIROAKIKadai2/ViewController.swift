@@ -32,11 +32,12 @@ class ViewController: UIViewController {
         case 0:resultTextField.text = String(num1 + num2)
         case 1:resultTextField.text = String(num1 - num2)
         case 2:resultTextField.text = String(num1 * num2)
-        case 3:if num2 != 0{
-            resultTextField.text = String(num1 / num2)
-        }else {
-            resultTextField.text = "割る前には0以外を入力してください"
-        }
+        case 3:
+            if num2 != 0{
+                resultTextField.text = String(num1 / num2)
+            }else {
+                resultTextField.text = "割る前には0以外を入力してください"
+            }
         default:
             resultTextField.text = ""
         }
