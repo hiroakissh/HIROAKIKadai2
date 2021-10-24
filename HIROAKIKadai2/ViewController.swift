@@ -14,15 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet private weak var resultTextField: UILabel!
     @IBOutlet private weak var segmentControl: UISegmentedControl!
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         num1TextField.keyboardType = .decimalPad
         num2TextField.keyboardType = .decimalPad
-
     }
 
-    @IBAction func calcButton(_ sender: Any) {
+    @IBAction private func calcButton(_ sender: Any) {
         let index = segmentControl.selectedSegmentIndex
 
         let num1 = Int(num1TextField.text ?? "") ?? 0
@@ -42,6 +40,4 @@ class ViewController: UIViewController {
             resultTextField.text = ""
         }
     }
-
 }
-
