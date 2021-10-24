@@ -16,6 +16,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        num1TextField.keyboardType = .decimalPad
+        num2TextField.keyboardType = .decimalPad
 
     }
 
