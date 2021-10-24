@@ -9,11 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var num1TextField: UITextField!
+    @IBOutlet weak var num2TextField: UITextField!
+    @IBOutlet weak var errorTextField: UILabel!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
+    @IBAction func calcMethod(_ sender: Any) {
+    }
+
+    @IBAction func calcButton(_ sender: Any) {
+    }
 
 }
 
