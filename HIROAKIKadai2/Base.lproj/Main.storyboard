@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HIROAKIKadai2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="V">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rCt-Zc-ETO">
-                                <rect key="frame" x="127.5" y="79" width="159" height="34"/>
+                                <rect key="frame" x="220.5" y="35" width="159" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="159" id="7uI-7b-czO"/>
                                     <constraint firstAttribute="height" constant="34" id="qHP-V6-5xG"/>
@@ -26,7 +25,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zyr-Ev-xZh">
-                                <rect key="frame" x="127.5" y="134" width="159" height="34"/>
+                                <rect key="frame" x="220.5" y="90" width="159" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="1ef-fL-H6A"/>
                                     <constraint firstAttribute="width" constant="159" id="jUp-Pc-FoP"/>
@@ -35,7 +34,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MxL-iS-V8m">
-                                <rect key="frame" x="127" y="208" width="160" height="32"/>
+                                <rect key="frame" x="220" y="164" width="160" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="4wG-v6-t1A"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="dEe-WE-Tp5"/>
@@ -48,7 +47,7 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsu-7a-M16">
-                                <rect key="frame" x="127" y="271" width="160" height="31"/>
+                                <rect key="frame" x="220" y="227" width="160" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="OI4-eM-v3u"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="lZo-sG-hLk"/>
@@ -60,7 +59,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b86-Rg-98v">
-                                <rect key="frame" x="127" y="334" width="160" height="21"/>
+                                <rect key="frame" x="220" y="290" width="160" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="4YJ-eT-O7B"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="wMB-yD-B1X"/>
@@ -88,7 +87,7 @@
                     <connections>
                         <outlet property="num1TextField" destination="rCt-Zc-ETO" id="Dyd-hm-2mD"/>
                         <outlet property="num2TextField" destination="Zyr-Ev-xZh" id="AHg-Ty-STo"/>
-                        <outlet property="resultTextField" destination="b86-Rg-98v" id="er5-dm-neu"/>
+                        <outlet property="resultLabel" destination="b86-Rg-98v" id="er5-dm-neu"/>
                         <outlet property="segmentControl" destination="MxL-iS-V8m" id="OBC-Sz-66V"/>
                     </connections>
                 </viewController>
