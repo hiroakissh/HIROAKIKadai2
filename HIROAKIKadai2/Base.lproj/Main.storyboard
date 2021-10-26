@@ -88,7 +88,7 @@
                     <connections>
                         <outlet property="num1TextField" destination="rCt-Zc-ETO" id="Dyd-hm-2mD"/>
                         <outlet property="num2TextField" destination="Zyr-Ev-xZh" id="AHg-Ty-STo"/>
-                        <outlet property="resultTextField" destination="b86-Rg-98v" id="er5-dm-neu"/>
+                        <outlet property="resultLabel" destination="b86-Rg-98v" id="943-fv-hf3"/>
                         <outlet property="segmentControl" destination="MxL-iS-V8m" id="OBC-Sz-66V"/>
                     </connections>
                 </viewController>
